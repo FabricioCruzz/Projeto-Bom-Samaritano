@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+        <title>Cadastro</title>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device=width, initial-scale=1.0">
+        <link href="../styles/formulario.css" rel="stylesheet">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        
+        <div class="mobile_bar">
+            <a href="../index.html">
+                <img src="../images/Logos/Logo_Version_1.png" alt="logo_mobile">
+            </a>
+        </div>
+        <input type="checkbox" id='bt_menu'>
+        <label for="bt_menu">&#9776;</label>
+
+        <nav class="menu">            
+            <ul>
+                <li><a class="logo" href="../index.html"></a></li>
+                <li><a href="../index.html">Início</a></li>
+                <li><span>|</span></li>
+                <li><a href="./formulario_cadastro.html">Cadastro</a></li>
+                <li><span>|</span></li>
+                <li><a href="#">Bazar</a></li>
+                <li><span>|</span></li>
+                <li><a href="#">Desejo Ser Voluntário</a></li>
+            </ul>
+        </nav>
+
+        <div>
+            <h1 class="titulo">Cadastro</h1>
+        </div>
+
+        <form action="../index.html" method="GET">
+
+            <fieldset class="grupo">
+                <h2 class="subtitulo">Dados Pessoais</h2>
+                
+                <div class="campoNome">
+                    <label class="label-descricao" for="nomeCompleto">Nome Completo</label>
+                    <input id="nomeCompleto" type="text" name="nomeCompleto" placeholder="Nome completo..." required>
+                </div>
+
+                <div class="campo">
+                    <label class="label-descricao" for="dataNasc">Data de Nascimento</label>
+                    <input id="dataNasc" type="date" name="dataNasc">
+                </div>
+
+                <div class="campo">
+                    <label class="label-descricao">Sexo</label>
+                    
+                    <label>
+                        <input type="radio" name="sexo" value="Masculino">
+                        Masculino
+                    </label>
+                    
+                    <label>
+                        <input type="radio" name="sexo" value="Feminino">
+                        Feminino
+                    </label>
+                    
+                    <label>
+                        <input type="radio" name="sexo" value="Não desejo informar">
+                        Não desejo informar
+                    </label>
+                </div>
+
+                <div class="campo">
+                    <label class="label-descricao" for="telefone1">Telefone 1</label>
+                    <input id="telefone1" class="telefone" type="tel" name="telefone1" placeholder="(35) 91234-5678">
+                </div>
+
+                <div class="campo">
+                    <label class="label-descricao" for="telefone2">Telefone 2 (Opcional)</label>
+                    <input id="telefone2" class="telefone" type="tel" name="telefone2" placeholder="(35) 91234-5678">
+                </div>
+
+            </fieldset>
+
+            <fieldset class="grupo">
+                <h2 class="subtitulo">Endereço</h2>
+
+                <div class="campo">
+                    <label class="label-descricao" for="rua">Rua</label>
+                    <input id="rua" type="text" name="rua" placeholder="Rua..." required>
+                </div>
+
+                <div class="campo number-mobile">
+                    <label class="label-descricao" for="numero">Número</label>
+                    <input id="numero" type="text" name="numero" placeholder="123" required>
+                </div>
+
+                <div class="campo">
+                    <label class="label-descricao" for="bairro">Bairro</label>
+                    <input id="bairro" type="text" name="bairro" placeholder="Bairro..." required>
+                </div>
+
+                <div class="campoComplemento">
+                    <label class="label-descricao" for="complemento">Complemento (Ponto de Referência)</label>
+                    <input id="complemento" type="text" name="complemento" placeholder="Complemento ou ponto de referência...">
+                </div>
+            </fieldset>
+
+            <fieldset class="grupo">
+                <h2 class="subtitulo">Outros Dados</h2>
+
+                <div class="campo">
+                    <label class="label-descricao">Qual a quantidade de moradores na casa?</label>
+                    
+                    <label>
+                        <input type="radio" name="qtdMoradores" value="1 pessoa">
+                        1 pessoa
+                    </label>                  
+                   
+                    <label>
+                        <input type="radio" name="qtdMoradores" value="3 pessoas">
+                        Até 3 pessoas
+                    </label>           
+                    
+                    <label>
+                        <input type="radio" name="qtdMoradores" value="Mais que 3 pessoas">
+                        Mais que 3 pessoas
+                    </label>
+                </div>
+
+                <div class="campo">
+                    <label class="label-descricao">Quantas crianças/adolescentes na casa?</label>
+
+                    
+                    <label>
+                        <input type="radio" name="qtdCriancas" value="Nenhuma">
+                        Nenhuma
+                    </label>         
+                    
+                    <label>
+                        <input type="radio" name="qtdCriancas" value="Até 3 crianças/adolescentes">
+                        Até 3 crianças/adolescentes
+                    </label>
+                    
+                    <label>
+                        <input type="radio" name="qtdCriancas" value="Mais que 3 crianças/adolescentes">
+                        Mais que 3 crianças/adolescentes
+                    </label>
+                </div>
+
+                <div class="campo">
+                    <label class="label-descricao">Qual a idade das crianças?</label>
+                    
+                    <label>
+                        <input type="radio" name="idadeCriancas" value="Não moram crianças/adolescentes comigo">
+                        Não moram crianças/adolescentes comigo
+                    </label>
+                    
+                    <label>
+                        <input type="radio" name="idadeCriancas" value="Recém-nascido">
+                        Recém-nascido
+                    </label>
+                    
+                    <label>
+                        <input type="radio" name="idadeCriancas" value="Até 16 anos">
+                        Até 16 anos
+                    </label>
+                    
+                    <label>
+                        <input type="radio" name="idadeCriancas" value="Mais que 16 anos">
+                        Mais que 16 anos
+                    </label>
+                </div>
+
+                <div class="campo campo-mobile">
+                    <label class="label-descricao" for="qtdTrabalhadores">Quantos na casa trabalham (incluindo bicos)?</label>
+                    <input id="qtdTrabalhadores" name="qtdTrabalhadores" type="number">
+                </div>
+
+                <div class="campo campo-mobile">
+                    <label class="label-descricao" for="rendaMedia">Informe uma renda média/mês</label>
+                    <input id="rendaMedia" type="number" name="rendaMedia">
+                </div>
+
+                <div class="campo">
+                    <label class="label-descricao">Precisa de roupas, calçados e/ou cobertores?</label>
+                    
+                    <label>
+                        <input type="radio" name="necessidades" value="Sim">
+                        Sim
+                    </label>
+                    
+                    <label>
+                        <input type="radio" name="necessidades" value="Não">
+                        Não
+                    </label>
+                </div>
+                
+                <div class="campo textarea-mobile">
+                    <label class="label-descricao" for="observacao">Deseja deixar alguma observação?</label>
+                    <textarea id="observacao" name="observacao" placeholder="Deixe uma observação para nós..."></textarea>
+                </div>
+            </fieldset>
+
+            <button id="button" type="button">Pronto</button>
+        </form>
+
+        <script src="../js/formulario.js"></script>
+    </body>
+</html>

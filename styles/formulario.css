@@ -1,0 +1,404 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    height: 100%;
+}
+
+body {
+    background-color: #f0f8f0;
+    
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 6em
+}
+
+label[for="bt_menu"] {
+
+    display: none;
+    position: absolute;
+    top: 0.2em;
+    left: 0;
+    padding: 0.2em 1em 0 1em;
+    background-color: #E3483E;
+    color: black;
+    text-align: left;
+    font-size: 30px;
+    cursor: pointer;
+    height: 50px;
+}
+
+.mobile_bar {
+    display: none;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    flex-direction: column;
+    align-content: space-between;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #E3483E;
+}
+
+#bt_menu {
+    display: none;
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.menu ul {
+    margin-bottom: 2em;
+    float: left;
+    width: 100%;
+    background-color: #E3483E;
+    list-style: none;
+    border-bottom: 0.5px solid gray;
+}
+
+.logo {
+    margin: 0 0 -23px 10px !important;
+    padding: 0 !important;
+    width: 130px;
+    height: 64px;
+    background-image: url(../images/Logos/Logo_Version_1.png);
+    background-size: 166px 64px;
+    left: 335px;
+    float: left;
+}
+
+.menu ul li{
+    display: inline-block;
+}
+
+
+.menu ul li a {
+    margin: 1em 0.5em;
+    padding: 5px 10px;
+    display: inline-block;
+
+    color: black;
+    text-decoration: none;
+}
+
+.menu ul li a:hover {
+    color: rgba(0, 0, 0, 0.61);
+}
+
+
+.titulo {
+    font-size: 2.7em;
+    color: black;
+    
+    margin: 10px 0 10px 0;
+    padding: 0.5em 5em;
+    text-align: center;
+
+    text-transform: uppercase;
+}
+
+form {
+    margin: 1em;
+    padding: 10px 5px;
+}
+
+fieldset {
+    border: 0.05em rgba(128, 128, 128, 0.616) solid;
+    padding: 0.3em;
+    margin: 3px;
+}
+
+.subtitulo {
+    margin: 0px 3px 3px 1px;
+    padding: 0.25em 0 1em 0.25em;
+    font-size: 1.5em;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+input, textarea, button {
+    border-radius: 5px;
+}
+
+.campoNome {
+    margin: 1em 1em 1em 2em;
+}
+
+.campoNome input {
+    display: block;
+    margin-top: 0.3em;
+    padding: 0.3em;
+    border: 1px solid #E3483E;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    width: 35%;
+}
+
+.campo {
+    margin-bottom: 1em;
+    width: 40%;
+}
+
+.campo label {
+    margin-bottom: 0.2em;
+    color: black;
+    display: block;
+}
+
+.label-descricao {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+fieldset.grupo .campo {
+    margin: 1em 1em 1em 2em;
+    float: left;
+}
+
+fieldset.grupo .campoComplemento {
+    margin: 1em 1em 1em 2em;
+    float: left;
+}
+
+.campoComplemento label {
+    margin-bottom: 0.2em;
+    display: block;
+}
+
+.campoComplemento input {
+    display: block;
+    margin-top: 0.3em;
+    padding: 0.3em;
+    border: 1px solid #E3483E;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    width: 450px;
+}
+
+.campo input[type="text"], .campo input[type="email"], .campo input[type="tel"], .campo input[type="date"], .campo input[type="number"], .campo textarea {
+    padding: 0.3em;
+    border: 1px solid #E3483E;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    display: block;
+}
+
+.campo input[name="rua"], .campo input[name="bairro"] {
+    width: 300px;
+}
+
+.campo input[name="numero"] {
+    width: 10%;
+}
+
+.campo input#qtdTrabalhadores {
+    width: 10%;
+}
+
+.campo input#rendaMedia {
+    width: 35%;
+}
+
+.campo textarea {
+    font-family: 'Roboto', sans-serif;
+
+    height: 90px;
+    width: 350px;
+    
+    resize: none;
+}
+
+.textarea-mobile {
+    margin-left: 35% !important;
+    width: 65%;
+    float: none !important;
+    display: inline-block;
+}
+
+.campo input:focus, .campo textarea:focus{
+    background: #e0e0f84b;
+}
+
+#button {
+    font-size: 1.4em;
+    
+    background: #E3483E;
+    color: #FFFFFF;
+    
+    margin-right: 50%;
+    margin-bottom: 1em;
+    padding: 0.2em 2em;
+    
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    
+    position: sticky;
+    top: 90%;
+    left: 50%;
+    
+    transform: translate(50%, 50%);
+    
+    border: 0;
+    border-radius: 10em;
+    
+    cursor: pointer;
+}
+
+#button:hover {
+    background: #e3493e73;
+    box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.2);
+    text-shadow: none;
+}
+
+@media screen and (max-width: 1250px) {
+    .campo-mobile {
+        margin-left: 2em !important;
+
+    }
+
+    .campoComplemento {
+        margin-left: 1em !important;
+    }
+
+    .textarea-mobile {
+        margin-left: 35% !important;
+        margin-right: 35% !important;
+        width: 65%;
+        float: none !important;
+        display: inline-block;
+    }
+    
+    .campoNome {
+        float: left;
+    }
+
+    .campoNome input {
+        width: auto;
+    }
+
+    .campo input[name="rua"] {
+        width: 250px;
+    }
+
+    .campo input[name="bairro"] {
+        width: 180px;
+    }
+
+    .campo input[name="numero"] {
+        width: 50%;
+    }
+
+    .number-mobile {
+        margin: 1em 1em 1em 1em !important;
+        width: 15%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    
+    label[for="bt_menu"] {
+        display: block;
+    }
+
+    .mobile_bar {
+        display: flex;
+    }
+
+    .mobile_bar a img {
+        margin-left: 60px;
+    }
+
+    #bt_menu:checked ~ .menu {
+        margin-left: 0;
+    }
+
+    .menu {
+        margin-left: -100%;
+        transition: all 0.4s;
+
+        top: 4em;
+    }
+
+    .menu ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+
+    .logo {
+        display: none !important;
+    }
+    
+    .menu ul li {
+        float: none;
+    }
+
+    .titulo {
+        padding: 0;
+    }
+
+    .subtitulo {
+        font-size: 1.7em;
+    }
+
+    fieldset.grupo .campo {
+        margin: 1em 1em 1em 2em;
+        float: none !important;
+    }
+
+    fieldset.grupo .campoComplemento {
+        margin-left: 2em !important;
+        float: none;
+    }
+
+    .number-mobile {
+        margin: 1em 1em 1em 2em !important;
+        width: 25%;
+    }
+
+    fieldset:nth-child(2) {
+        display: grid;
+    }
+
+    .campoComplemento input {
+        width: 300px;
+    }
+
+    .label-descricao {
+        margin-bottom: 0.55em !important;
+    }
+
+    .textarea-mobile {
+        margin: 1em 1em 1em 2em !important;
+    }
+
+    .campo textarea {
+        height: 16vw;
+        width: 35vh;
+    }
+    
+    .campo input#qtdTrabalhadores {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 380px) {
+
+    .campo input[name="rua"] {
+        width: 239px;
+    }
+
+    .campoComplemento input {
+        width:239px
+    }
+    
+    .campo textarea {
+        width: 27vh !important;
+    }
+}

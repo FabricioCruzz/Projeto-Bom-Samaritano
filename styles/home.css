@@ -1,0 +1,388 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    height: 100%;
+}
+
+label[for="bt_menu"] {
+
+    display: none;
+    position: absolute;
+    top: 0.2em;
+    left: 0;
+    padding: 0.2em 1em 0 1em;
+    background-color: #E3483E;
+    color: black;
+    text-align: left;
+    font-size: 30px;
+    cursor: pointer;
+    height: 50px;
+}
+
+.mobile_bar {
+    display: none;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    flex-direction: column;
+    align-content: space-between;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #E3483E;
+}
+
+#bt_menu {
+    display: none;
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.menu ul {
+    margin-bottom: 2em;
+    float: left;
+    width: 100%;
+    background-color: #E3483E;
+    list-style: none;
+    border-bottom: 0.5px solid gray;
+}
+
+.logo {
+    margin: 0 0 -23px 10px !important;
+    padding: 0 !important;
+    width: 130px;
+    height: 64px;
+    background-image: url(../images/Logos/Logo_Version_1.png);
+    background-size: 166px 64px;
+    left: 335px;
+    float: left;
+}
+
+.menu ul li{
+    display: inline-block;
+}
+
+.menu ul li a {
+    margin: 1em 0.5em;
+    padding: 5px 10px;
+    display: inline-block;
+
+    color: black;
+    text-decoration: none;
+}
+
+.menu ul li a:hover {
+    color: rgba(0, 0, 0, 0.61);
+}
+
+body {
+    background-color: #f0f8f0;
+    
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 6em
+}
+
+#slider {
+    width: 100%;
+    max-width: 100%;
+    height: 25vw;
+    max-height: 250px;
+    position: relative;
+    margin-bottom: 0.5em;
+}
+
+#slider img {
+    opacity: 0;
+
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: opacity 800ms;
+}
+
+#slider img.selected {
+    opacity: 1;
+}
+
+.titulo {
+    font-size: 2.7em;
+    color: black;
+    
+    margin: 0 0 0.5em 2em;
+    padding: 0.5em 5em;
+    text-align: center;
+
+    text-transform: uppercase;
+}
+
+.conteudo {
+    min-height: calc(41.9vh - 40px);
+}
+
+.subTitulo {
+    font-size: 2em;
+    text-align: center;
+
+    margin-top: 2em;
+    margin-bottom: 1.5em;
+
+    text-transform: uppercase;
+}
+
+#container p {
+    display: inline-block;
+
+    margin: 1em;
+    padding: 0.5em;
+
+    background-color: antiquewhite;
+    border-radius: 10px;
+
+    text-align: center;
+    padding: 10px;
+
+    max-height: 50%;
+    max-width: 50%;
+}
+
+#comentario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2em;
+}
+
+textarea {
+    font-family: 'Roboto', sans-serif;
+    margin: 1.5em 1em 1em 1em;
+    padding: 0.3em;
+    border: 1px solid #E3483E;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    display: block;
+
+    height: 90px;
+    width: 350px;
+
+    resize: none;
+}
+
+textarea:focus{
+    background: #e0e0f84b;
+}
+
+#button {
+    font-size: 1.4em;
+    background: #E3483E;
+    border: 0;
+    margin-bottom: 1em;
+    color: #FFFFFF;
+    padding: 0.3em 2em;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    position: sticky;
+    top: 90%;
+    left: 50%;
+    margin-right: 50%;
+    transform: translate(50%, 50%);
+    border-radius: 10em;
+
+    cursor: pointer;
+}
+
+#button:hover {
+    background: #e3493e73;
+    box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.2);
+    text-shadow: none;
+}
+
+textarea, button {
+    border-radius: 5px;
+}
+
+#container div{
+    width: 100px;
+    height: 100px;
+    margin: 0.5em;
+    border-radius: 10px;
+    background-color: bisque;
+    display: inline-block;
+}
+
+#rodape {
+    text-align: center;
+    min-height: 50px;
+    width: 100%;
+    background-color: #E3483E;
+}
+
+#logo-rodape {
+    align-items: center;
+    margin: 0 0 0 20em;
+    float: left;
+}
+
+footer img {
+    width: 100%;
+    height: 100%;
+    max-height: 190px;
+    max-width: 190px;
+    vertical-align: middle;
+}
+
+.mensagem {
+
+    font-size: 2em;
+    display: inline-block;
+    position: relative;
+    margin: 50px 0 15px 0;
+    text-align: left;
+    width: 50%;
+}
+
+.informacoes-sede {
+    font-size: 0.8em;
+    display: inline-block;
+    position: relative;
+    margin: 10px 0 15px 0;
+    text-align: left;
+    width: 50%;
+}
+
+@media screen and (max-width: 1128px) {
+    #container p {
+        word-wrap: break-word;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .titulo {
+        font-size: 1.8em;
+        margin: 0 0.5em 1em 1em;
+        padding: 1em 1em;
+    }
+
+    #logo-rodape {
+        margin: 2.5em 0 1.5em 3em;
+    }
+
+    .mensagem {
+        font-size: 1.5em;
+        display: inline-block;
+        position: relative;
+        top: 1.55em;
+        margin: 50px 0 15px 0;
+        text-align: left;
+        width: 62%;
+    }
+
+    .informacoes-sede {
+        font-size: 0.7em;
+        display: inline-block;
+        position: relative;
+        top: 4.7em;
+        right: 3.55em;
+        margin: 20px 0 10px 0;
+        text-align: left;
+        width: 50%
+    }
+}
+
+@media screen and (max-width: 680px) {
+    
+    label[for="bt_menu"] {
+        display: block;
+    }
+
+    .mobile_bar {
+        display: flex;
+    }
+
+    .mobile_bar a img {
+        margin-left: 60px;
+    }
+
+    #bt_menu:checked ~ .menu {
+        margin-left: 0;
+    }
+
+    .menu {
+        margin-left: -100%;
+        transition: all 0.4s;
+
+        top: 4em;
+    }
+
+    .logo {
+        display: none !important;
+    }
+
+    .menu ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+
+    .logo {
+        display: none;
+    }
+    
+    .menu ul li {
+         float: none;
+     }
+     
+     #container p {
+        display: block;
+        margin: 13px 0 13px 25%;
+        word-wrap: break-word;
+     }
+
+     #logo-rodape {
+        margin: 10px auto;
+        padding: 0 10px;
+        float: none;
+     }
+
+     .mensagem {
+        font-size: 1.3em;
+        display: block;
+        position: relative;
+        top: 0;
+
+        margin: 20px 10%;
+        padding: 5px 2.5px;
+        width: 80%;
+    }
+
+    .informacoes-sede {
+        font-size: 11px;
+        display: block;
+        position: relative;
+        top: 0;
+        right: 0;
+        margin: 20px 10%;
+        padding: 5px 2.5px;
+        text-align: left;
+        width: 82%;
+    }
+}
+
+@media screen and (max-width: 380px){
+    textarea {
+        width: 320px
+    }
+}

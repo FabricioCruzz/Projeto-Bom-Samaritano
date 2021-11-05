@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+    <head>
+        <title>Projeto Bom Samaritano</title>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device=width, initial-scale=1.0">
+        <link href="./styles/home.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="mobile_bar">
+            <a href="../index.html">
+                <img src="images/Logos/Logo_Version_1.png" alt="logo_mobile">
+            </a>
+        </div>
+        <input type="checkbox" id='bt_menu'>
+        <label for="bt_menu">&#9776;</label>
+        
+        <nav class="menu">
+            <ul>
+                <li><a class="logo" href="./index.html"></a></li>
+                <li><a href="index.html">Início</a></li>
+                <li><span>|</span></li>
+                <li><a href="./pages/formulario_cadastro.html">Cadastro</a></li>
+                <li><span>|</span></li>
+                <li><a href="#">Bazar</a></li>
+                <li><span>|</span></li>
+                <li><a href="#">Desejo Ser Voluntário</a></li>
+            </ul>
+        </nav>
+
+        <h1 class="titulo">Bem-vindo ao Projeto Bom Samaritano!</h1>
+
+        <div id="slider">
+            <img class="selected" src="./images/Banner/FOTO1.png" alt="foto_banner_1">
+            <img src="./images/Banner/FOTO2.png" alt="foto_banner_2">
+            <img src="./images/Banner/FOTO3.png" alt="foto_banner_3">
+        </div>
+        <div class="conteudo">
+            <div id="comentario">
+                <label for="testemunho">Gostaria de nos contar algo que o <strong> Projeto Bom Samaritano</strong> fez na sua vida?<br>Escreva abaixo:</label>
+                <textarea id="testemunho" name="testemunho" placeholder="Deixe aqui o seu testemunho..."></textarea>
+                <button id="button" type="submit">Enviar</button>
+            </div>
+            <div id="container"><h2 class="subTitulo">Testemunhos</h2></div>
+        </div>
+
+        <footer id="rodape">
+
+            <div id="conteudo-footer">
+                <div id="logo-rodape">
+                    <img id="image-logo" src="./images/Logos/Logo_Version_2.png" alt="logo">
+                </div>
+    
+                <div class="mensagem">Obra de Caridade da Igreja Católica Apostólica Romana em Paraisópolis - MG</div>
+    
+                <div class="informacoes-sede">Rua Bueno de Paiva, 630 - Centro - Paraisópolis - Minas Gerais - CEP 37660-000 - Tel. (35) 3651 - 1035</div>
+            </div>
+
+        </footer>
+
+        <script src="./js/home.js"></script>
+    </body>
+
+</html>
